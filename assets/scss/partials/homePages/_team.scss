@@ -1,0 +1,84 @@
+#team{
+    .container{
+        .top{
+            text-align: center;
+            line-height: 30px;
+            letter-spacing: 2px;
+            h1{
+                color: $title-color;
+                line-height: 80px;
+                font-weight: 400;
+            }
+            p{
+                color: $text-color;
+                font-size: 16px;
+                margin-bottom: 50px;
+            }
+        }
+       .cards{
+           padding: 0;
+           margin: 50px 0;
+           position: relative;
+           border: 1px solid $light-color;
+           border-radius: 20px;
+           box-shadow: 0 2px 8px 0 rgba(0,0,0,0.2%);
+           ::after{
+               content:" ";
+               position: absolute;
+               transition: .4s;
+               top: 0%;
+               left: 0%;
+               width: 100%;
+               height: 80px;
+               z-index: -2;
+               border-top-left-radius: 20px;
+               border-top-right-radius: 20px;
+               background-image: linear-gradient($main-color);
+           }
+           &:hover {
+            ::after{
+                height: 120px;
+            }
+            i{
+                color: $light-color;
+            }
+           }
+        .content{
+            padding: 5px 0;
+            z-index: 9999999;
+            letter-spacing: 1px;
+            color: $light-color;
+           
+        }
+        ul{ 
+            z-index: 58888;
+            li{
+                display: inline;
+                list-style: none;
+                margin-right: 15px;
+                a{
+                    i{
+                        margin: 20px 0;
+                        font-size: 18px;
+                        color: $main-color;
+
+                    }
+                }
+            }
+        }
+        p{
+            color: $text-color;
+        }
+        .image{
+            img{
+                transform: translateY(30px);
+                border-radius:100% ;
+                transition: .4s;
+            }
+        }
+        &:hover img{
+            transform: translateY(50px);
+          }
+       }
+    }
+}

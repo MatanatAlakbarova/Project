@@ -1,0 +1,59 @@
+#footer{
+    background-color: $main-color;
+    padding: 80px 0 0 0;
+    color: $light-color;
+    p{
+        color: $light-color;
+        margin-top: 50px;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    a{
+        color: $light-color;
+        text-decoration: none;
+        font-size: 16px;
+    }
+   .box{
+    ul{
+        padding: 0;
+        li{
+            list-style: none;
+            line-height: 40px;
+            span{
+            transition: .4s;
+            }
+            &:hover{
+                span{
+                margin-left: 10px;
+                }
+            }
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+   }
+   h5{
+       font-size: 20px;
+       margin-bottom: 50px;
+       letter-spacing: 1px;
+   }
+    span{
+        line-height: 50px;
+        font-size: 16px;
+
+    }
+    .social-icon{
+        ul{
+            padding: 0;
+            display: flex;
+            text-align: start;
+            li{
+                list-style: none;
+                margin-right:10px ;
+
+            }
+        }
+    }
+ 
+}

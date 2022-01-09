@@ -1,0 +1,36 @@
+#faqs-intro{
+    margin: 100px 0;
+    .left{
+        h3{
+            color: $main-color;
+        }
+        p{
+            color: $text-color;
+            margin: 25px 0;
+            letter-spacing: 1px;
+        }
+        .btn{
+            background-color: $main-color;
+            border: $main-color;
+        }
+    }
+   .items{
+    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+    .accordion-item{
+       font-family:serif;
+       border: 1px solid $light-color;
+       h2{
+       transition: .4s;
+       }
+       &:hover{
+           h2{
+            margin-left: 10px;
+           }
+       }
+       .accordion-body{
+           color: $text-color;
+       }
+    }
+   }
+   
+}

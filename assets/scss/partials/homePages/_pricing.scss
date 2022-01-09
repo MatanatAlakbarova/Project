@@ -1,0 +1,135 @@
+#pricing-plans{
+    background-color: $background-color;
+    padding: 100px 0;
+    .container{
+        .row{
+            .top{
+                text-align: center;
+                line-height: 30px;
+                letter-spacing: 2px;
+                h1{
+                    color: $title-color;
+                    line-height: 80px;
+                    font-weight: 400;
+                }
+                p{
+                    color: $text-color;
+                    font-size: 20px;
+                }
+            }
+             
+                .content{
+                    border: 1px solid $light-color;
+                    padding: 50px 0;
+                    text-align: center;
+                    background-color: $light-color;
+                    margin-top:50px;
+                    .header{
+                        .title{
+                            letter-spacing: 2px;
+                            font-size: 20px;
+                            color: $title-color;
+                        }
+                        .number{
+                            display: inline-block;
+                            font-size: 25px;
+                            color: $main-color;
+                            border: 1px solid $light-color;
+                            border-radius: 100%;
+                            padding: 10px 25px;
+                            text-align: center;
+                            background-color: $background-color;
+                        }
+                        .currency{
+                            font-size: 25px;
+                            color: $main-color;
+                        }
+                        .price{
+                            font-size: 50px;
+                            color: $main-color;
+                        }
+                        .month{
+                            color: $main-color;
+                        }
+                    }
+                    .body{
+                        ul{
+                            li{
+                                list-style: none;
+                               margin-bottom: 10px;
+                                font-size: 18px;
+                                color: $title-color;
+                            }
+                            .passive{
+                            text-decoration: line-through;
+                            color: rgb(180, 176, 176);
+                            }
+                        }
+                        .btn{
+                            background-color: $main-color;
+                            border: none;
+                            font-size: 18px;
+                        }
+                    }
+              }
+                .box{
+                    .content{
+                        border: 1px solid $light-color;
+                        padding: 50px 0;
+                        text-align: center;
+                        background-color: $light-color;
+                        margin-top:50px;
+                        .header{
+                            .title{
+                                letter-spacing: 2px;
+                                font-size: 20px;
+                                color: $title-color;
+                            }
+                            .number{
+                                display: inline-block;
+                                font-size: 25px;
+                                color: $main-color;
+                                border: 1px solid $light-color;
+                                border-radius: 100%;
+                                padding: 10px 25px;
+                                text-align: center;
+                                background-color: $background-color;
+                            }
+                            .currency{
+                                font-size: 25px;
+                                color: $main-color;
+                            }
+                            .price{
+                                font-size: 50px;
+                                color: $main-color;
+                            }
+                            .month{
+                                color: $main-color;
+                            }
+                        }
+                        .body{
+                            ul{
+                                li{
+                                    list-style: none;
+                                   margin-bottom: 10px;
+                                    font-size: 18px;
+                                    color: $title-color;
+                                }
+                                .passive{
+                                text-decoration: line-through;
+                                color: rgb(180, 176, 176);
+                                }
+                            }
+                            .btn{
+                                background-color: $main-color;
+                                border: none;
+                                font-size: 18px;
+                            }
+                        }
+                        
+                    }
+                }
+        
+    }
+    }
+}

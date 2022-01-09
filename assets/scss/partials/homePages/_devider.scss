@@ -1,0 +1,40 @@
+#devider{
+    background-image: url(/assets/images/parallax.jpg) ;
+    height: 50vh;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -1;
+    ::after{
+        content:" ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #474bbb38;
+        width: 100%;
+        height: 100%;    
+        z-index: -2;    
+
+    }
+    .row{
+        .content{
+            text-align: center;
+            margin-top: 10%;
+            z-index: 3;
+            h2{
+                margin-bottom: 50px;
+                color: $light-color;
+                font-size: 18px;
+                span{
+                    text-decoration: underline;
+                }
+            }
+            .btn{
+                font-size: 16px;
+                background-color: $light-color;
+                color: $main-color;
+                border: none;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
