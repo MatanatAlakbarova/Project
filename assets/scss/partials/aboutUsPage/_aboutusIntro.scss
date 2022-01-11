@@ -1,22 +1,22 @@
 #about-us-intro{
-    background-color: $background-color;
-    padding: 100px 0;
+   padding-top: 100px;
     .container{
         .row{
             .top{
                 text-align: center;
                 line-height: 30px;
                 letter-spacing: 2px;
-                h2{
+                h1{
                     color: $title-color;
                     line-height: 80px;
                     font-weight: 400;
+                    font-size: 25px;
                 }
                 p{
                     color: $text-color;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
-            }
+            }    
         }
     }
 }

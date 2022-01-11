@@ -1,0 +1,23 @@
+#map{
+    .map-content{
+        padding-top: 50px;
+        padding-bottom: 100px;
+   
+        transform: translate(50%, -50%);
+        width: 50%;
+        background-color: $main-color;
+        border-radius: $border-radius;
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        ul{
+            li{
+                display: inline;
+                color: $light-color;
+                i{
+                }
+            }
+        }
+    } 
+ }
+ 

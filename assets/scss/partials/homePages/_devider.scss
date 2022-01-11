@@ -1,9 +1,9 @@
 #devider{
     background-image: url(/assets/images/parallax.jpg) ;
-    height: 50vh;
+    padding: 50px 0;
     background-attachment: fixed;
-    position: relative;
     z-index: -1;
+    position: relative;
     ::after{
         content:" ";
         position: absolute;
@@ -13,12 +13,11 @@
         width: 100%;
         height: 100%;    
         z-index: -2;    
-
     }
     .row{
         .content{
             text-align: center;
-            margin-top: 10%;
+            margin-top: 5%;
             z-index: 3;
             h2{
                 margin-bottom: 50px;

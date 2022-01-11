@@ -1,9 +1,16 @@
 #desing{
-    padding: 90px 0px;
+    padding: 100px 0px;
     .text{
         width: 80%;
+        h3{
+            font-size: 26px;
+            letter-spacing: 1px;
+            font-family: Nunito,sans-serif;
+            color: $title-color;
+        }
         p{
             margin: 25px 0px;
+            color: $text-color;
         }
     }
     .left{

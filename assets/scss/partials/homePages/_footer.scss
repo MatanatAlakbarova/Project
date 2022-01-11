@@ -34,14 +34,13 @@
     }
    }
    h5{
-       font-size: 20px;
-       margin-bottom: 50px;
+       font-size: 16px;
+       margin-bottom: 20px;
        letter-spacing: 1px;
    }
     span{
         line-height: 50px;
-        font-size: 16px;
-
+        font-size: 14px;
     }
     .social-icon{
         ul{
@@ -51,6 +50,9 @@
             li{
                 list-style: none;
                 margin-right:10px ;
+                i{
+                    font-size: 14px;
+                }
 
             }
         }

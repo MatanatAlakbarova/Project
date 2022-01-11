@@ -11,24 +11,30 @@
                     color: $title-color;
                     line-height: 80px;
                     font-weight: 400;
+                    font-size: 25px;
                 }
                 p{
                     color: $text-color;
-                    font-size: 20px;
+                    font-size: 16px;
                 }
             }
-             
                 .content{
                     border: 1px solid $light-color;
-                    padding: 50px 0;
+                   // padding: 50px 0;
                     text-align: center;
                     background-color: $light-color;
                     margin-top:50px;
+                    position: relative;
                     .header{
                         .title{
                             letter-spacing: 2px;
                             font-size: 20px;
                             color: $title-color;
+                            padding: 50px 0;
+                            border-bottom: 1px solid rgb(224, 219, 219);
+                        }
+                        .colored{
+                            background-color: $main-color;
                         }
                         .number{
                             display: inline-block;
@@ -36,9 +42,13 @@
                             color: $main-color;
                             border: 1px solid $light-color;
                             border-radius: 100%;
-                            padding: 10px 25px;
+                            padding: 10px 10px;
                             text-align: center;
                             background-color: $background-color;
+                            position: absolute;
+                            top: 18%;
+                            left: 40%;
+                            right: 42%;
                         }
                         .currency{
                             font-size: 25px;
@@ -61,8 +71,8 @@
                                 color: $title-color;
                             }
                             .passive{
-                            text-decoration: line-through;
-                            color: rgb(180, 176, 176);
+                                text-decoration: line-through;
+                                color: rgb(180, 176, 176);
                             }
                         }
                         .btn{
@@ -71,18 +81,18 @@
                             font-size: 18px;
                         }
                     }
-              }
+                }
                 .box{
                     .content{
                         border: 1px solid $light-color;
-                        padding: 50px 0;
+                      //  padding: 50px 0;
                         text-align: center;
                         background-color: $light-color;
                         margin-top:50px;
                         .header{
                             .title{
                                 letter-spacing: 2px;
-                                font-size: 20px;
+                                font-size: 16px;
                                 color: $title-color;
                             }
                             .number{
@@ -100,7 +110,7 @@
                                 color: $main-color;
                             }
                             .price{
-                                font-size: 50px;
+                                font-size: 18px;
                                 color: $main-color;
                             }
                             .month{
@@ -111,25 +121,24 @@
                             ul{
                                 li{
                                     list-style: none;
-                                   margin-bottom: 10px;
-                                    font-size: 18px;
+                                    margin-bottom: 10px;
+                                    font-size: 14px;
                                     color: $title-color;
                                 }
                                 .passive{
-                                text-decoration: line-through;
-                                color: rgb(180, 176, 176);
+                                    text-decoration: line-through;
+                                    color: rgb(180, 176, 176);
                                 }
                             }
                             .btn{
                                 background-color: $main-color;
                                 border: none;
-                                font-size: 18px;
+                                font-size: 12px;
                             }
                         }
                         
                     }
                 }
-        
-    }
+        }
     }
 }
