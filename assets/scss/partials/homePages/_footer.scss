@@ -14,30 +14,30 @@
         font-size: 16px;
     }
    .box{
-    ul{
-        padding: 0;
-        li{
-            list-style: none;
-            line-height: 40px;
-            span{
-            transition: .4s;
-            }
-            &:hover{
+        ul{
+            padding: 0;
+            li{
+                list-style: none;
+                line-height: 40px;
                 span{
-                margin-left: 10px;
+                transition: .4s;
+                }
+                &:hover{
+                    span{
+                    margin-left: 10px;
+                    }
+                }
+                i{
+                    margin-right: 5px;
                 }
             }
-            i{
-                margin-right: 5px;
-            }
         }
-    }
    }
    h5{
        font-size: 16px;
        margin-bottom: 20px;
        letter-spacing: 1px;
-   }
+    }
     span{
         line-height: 50px;
         font-size: 14px;
@@ -53,9 +53,7 @@
                 i{
                     font-size: 14px;
                 }
-
             }
         }
     }
- 
 }

@@ -6,51 +6,46 @@
            display: flex;
            justify-content: space-around;
            .features-box{
-              margin-top: 20px;
-             align-items: center;
-             padding: 50px;
-             display: flex;
-             justify-content: space-evenly;
-             border: 1px solid $light-color;
-             background-color: $light-color;
-             box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
-           
-            .image-icon{
-                position: relative;
-                img{
-                    z-index: 3;
-                }
-                &::after{
-                    transition: 1s;
-                    content: "";
-                    position: absolute;
-                    top: -30px;
-                    left: -25px;
-                    width: 100%;
-                    height: 100%;
-                    background-color: $background-color;
-                    z-index: -2;
-                     padding: 50px;
-                     
-                    }
+                margin-top: 20px;
+                align-items: center;
+                padding: 50px;
+                display: flex;
+                justify-content: space-evenly;
+                border: 1px solid $light-color;
+                background-color: $light-color;
+                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+                .image-icon{
+                    position: relative;
                     transform: rotate(0deg);
                     border-radius: 15px;
-
+                    img{
+                        z-index: 3;
+                    }
+                    &::after{
+                        transition: 1s;
+                        content: "";
+                        position: absolute;
+                        top: -30px;
+                        left: -25px;
+                        width: 100%;
+                        height: 100%;
+                        background-color: $background-color;
+                        z-index: -2;
+                        padding: 50px;
+                    }
+                    &:hover .image-icon::after{
+                        transform: rotate(45deg);
+                    }
+                }
+                .text{
+                    h5{
+                        color: $title-color;
+                    }
+                    p{
+                        color: $text-color;
+                    }
+                }
             }
-            .text{
-                h5{
-                    color: $title-color;
-                }
-                p{
-                    color: $text-color;
-                }
-           }
-           &:hover .image-icon::after{
-               transform: rotate(45deg);
         }
-              
-           
-        }
-       }
-   }
+    }
 }

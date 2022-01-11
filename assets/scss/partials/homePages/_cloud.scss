@@ -16,7 +16,6 @@
         }
     }
     .left{
-        
         .buttons{
             .active{ 
                 margin: 15px 0px;
@@ -104,15 +103,15 @@
                 }
             }
         }
+    }
+    .right{
+        .box-img{
+            margin-top: 5%;
+            width: 80%;
+            img{
+                margin-left: auto;
+                width: 100%;
+            }            
         }
-        .right{
-            .box-img{
-                margin-top: 5%;
-                width: 80%;
-                img{
-                    margin-left: auto;
-                    width: 100%;
-                }            
-            }
-        }
+    }
 }

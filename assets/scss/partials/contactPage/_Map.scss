@@ -1,0 +1,47 @@
+ul{
+    li{
+        list-style: none;
+    }
+}
+#map{
+    .small-map{
+        .gmap_canvas{
+            box-shadow: $box-shadow;
+         }
+    }
+    .map-content{
+        box-shadow: $box-shadow;
+        text-align: center;
+        color: $light-color;
+        width: 60%;
+        padding: 25px;
+        background-color: $main-color;
+        transform: translate(35%, -50%);
+    }
+    .social-icon{
+        ul{
+            display: flex;
+           justify-content: center;
+            li{
+                padding: 10px;
+                a{
+                    i{
+                        color: $light-color;
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media only screen and (max-width: 990px){
+    #gmap_canvas{
+        width: 300px;
+        height: 150px;
+        transform: translate(-50%, -50%);
+        .small-map{
+            margin-right: 50%;
+        }
+    }
+}

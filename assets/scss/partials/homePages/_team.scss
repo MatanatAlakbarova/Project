@@ -18,9 +18,9 @@
         }
        .cards{
             margin: 50px 0px;
-           position: relative;
-           box-shadow: $box-shadow;
-           ::after{
+            position: relative;
+            box-shadow: $box-shadow;
+            ::after{
                content:" ";
                position: absolute;
                transition: .4s;
@@ -33,57 +33,57 @@
                border-top-left-radius: 5px;
                border-top-right-radius: 5px;
                background-image: linear-gradient($main-color);
-           }
-           &:hover {
-            ::after{
-                height: 120px;
             }
-            i{
-                color: $light-color;
-            }
+            &:hover {
+                ::after{
+                    height: 120px;
+                }
+                i{
+                    color: $light-color;
+                }
            }
            
-        .content{
-            padding: 5px 0;
-            z-index: 9999999;
-            letter-spacing: 1px;
-            color: $light-color;
-            h4{
-                font-size: 16px;
+            .content{
+                padding: 5px 0;
+                z-index: 9999999;
+                letter-spacing: 1px;
+                color: $light-color;
+                h4{
+                    font-size: 16px;
+                }
+                span{
+                    font-size: 14px;
+                }
             }
-            span{
-                font-size: 14px;
-            }
-        }
-        ul{ 
-            z-index: 58888;
-            li{
-                display: inline;
-                list-style: none;
-                margin-right: 15px;
-                a{
-                    i{
-                        margin: 20px 0;
-                        font-size: 16px;
-                        color: $main-color;
+            ul{ 
+                z-index: 58888;
+                li{
+                    display: inline;
+                    list-style: none;
+                    margin-right: 15px;
+                    a{
+                        i{
+                            margin: 20px 0;
+                            font-size: 16px;
+                            color: $main-color;
 
+                        }
                     }
                 }
             }
-        }
-        p{
-            color: $text-color;
-        }
-        .image{
-            img{
-                transform: translateY(30px);
-                border-radius:100% ;
-                transition: .4s;
+            p{
+                color: $text-color;
+            }
+            .image{
+                img{
+                    transform: translateY(30px);
+                    border-radius:100% ;
+                    transition: .4s;
+                }
+            }
+            &:hover img{
+                transform: translateY(50px);
             }
         }
-        &:hover img{
-            transform: translateY(50px);
-        }
-       }
     }
 }

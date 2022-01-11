@@ -15,22 +15,21 @@
         }
     }
    .items{
-    box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
-    .accordion-item{
-       font-family:serif;
-       border: 1px solid $light-color;
-       h2{
-       transition: .4s;
-       }
-       &:hover{
-           h2{
-            margin-left: 10px;
-           }
-       }
-       .accordion-body{
-           color: $text-color;
-       }
+        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+        .accordion-item{
+            font-family:serif;
+            border: 1px solid $light-color;
+            h2{
+                transition: .4s;
+            }
+            &:hover{
+                h2{
+                    margin-left: 10px;
+                }
+            }
+            .accordion-body{
+                color: $text-color;
+            }
+        }
     }
-   }
-   
 }

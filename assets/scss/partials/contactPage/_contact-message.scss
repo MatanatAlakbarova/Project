@@ -1,0 +1,16 @@
+#contact-message{
+    background-color: $background-color;
+    padding: 100px 0;
+    h5{
+        color: $text-color;
+        line-height: 60px;
+    }
+    p{
+        color: $text-color;
+        font-size: 14px;
+    }
+    .btn{
+        background-color: $main-color;
+        border: none;
+    }
+}

@@ -14,96 +14,91 @@
         }
     }
     .left{
-        
-    .buttons{
-        .active{ 
-            margin: 15px 0px;
-            overflow: hidden;
-            position: relative;
-            text-decoration: none;
-            display: inline-block;
-            width: 250px;
-            height: 40px;
-            background-color: $light-color;
-            border-radius: 5px;
-            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
-            z-index: 1;
-            span{
+        .buttons{
+            .active{ 
+                margin: 15px 0px;
+                overflow: hidden;
+                position: relative;
+                text-decoration: none;
                 display: inline-block;
-                margin-left: 45px;
-                color: $text-color;
-            }
-            i{
-                margin: 10px 15px;
-                color: $light-color;
+                width: 250px;
+                height: 40px;
+                background-color: $light-color;
+                border-radius: 5px;
+                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
                 z-index: 1;
+                span{
+                    display: inline-block;
+                    margin-left: 45px;
+                    color: $text-color;
+                }
+                i{
+                    margin: 10px 15px;
+                    color: $light-color;
+                    z-index: 1;
+                }
+                ::after{
+                    content: "";
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: -10px;
+                    left: -40px;
+                    background-color:$main-color;
+                    transform: rotate(60deg);
+                    z-index: -1;
+                }
             }
-            ::after{
-                content: "";
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                top: -10px;
-                left: -40px;
-                background-color:$main-color;
-                transform: rotate(60deg);
-                z-index: -1;
-            }
-           
-            
-        }
-        .focus{
-            margin: 15px 0px;
-            overflow: hidden;
-            position: relative;
-            text-decoration: none;
-            display: inline-block;
-            width: 250px;
-            height: 40px;
-            background-color: $light-color;
-            border-radius: 5px;
-            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
-            z-index: 1;
-            transition:all 0.4s ease-in-out;
-            span{
-                transition:all 0.5s ease-in-out;
+            .focus{
+                margin: 15px 0px;
+                overflow: hidden;
+                position: relative;
+                text-decoration: none;
                 display: inline-block;
-                margin-left: 45px;
-                color: $text-color;
-            }
-            i{
-                margin: 10px 15px;
-                color: black ;
+                width: 250px;
+                height: 40px;
+                background-color: $light-color;
+                border-radius: 5px;
+                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
                 z-index: 1;
-            }
-            ::after{
-                content: "";
-                width: 100px;
-                height: 100px;
-                position: absolute;
-                top: -10px;
-                left: -40px;
-                background-color:$background-color;
-                transform: rotate(60deg);
-                z-index: -1;
                 transition:all 0.4s ease-in-out;
+                span{
+                    transition:all 0.5s ease-in-out;
+                    display: inline-block;
+                    margin-left: 45px;
+                    color: $text-color;
+                }
+                i{
+                    margin: 10px 15px;
+                    color: black ;
+                    z-index: 1;
+                }
+                ::after{
+                    content: "";
+                    width: 100px;
+                    height: 100px;
+                    position: absolute;
+                    top: -10px;
+                    left: -40px;
+                    background-color:$background-color;
+                    transform: rotate(60deg);
+                    z-index: -1;
+                    transition:all 0.4s ease-in-out;
+                }
+                &:hover ::after{
+                    background-color: $main-color;
+                    width: 110px;
+                    transition:all 0.4s ease-in-out;
+                }
+                &:hover i{
+                    color: $light-color;
+                }
+                &:hover span{
+                    margin-left: 55px;
+                    transition:all 0.4s ease-in-out;
+                }
             }
-            &:hover ::after{
-                background-color: $main-color;
-                width: 110px;
-                transition:all 0.4s ease-in-out;
-            }
-            &:hover i{
-                color: $light-color;
-            }
-            &:hover span{
-                margin-left: 55px;
-                transition:all 0.4s ease-in-out;
-            }
-           
-            
         }
-    }
     }
     .right{
         .box-img{
