@@ -5,5 +5,9 @@
 @import "./partials/faqsPage/index/faqs";
 @import "./partials/featuresPage/index/features";
 @import "./partials/contactPage/index/contactPage";
+@import "./partials/preloading";
 
+body{
+    overflow-x: hidden;
+}
 

@@ -36,12 +36,41 @@ ul{
 }
 
 @media only screen and (max-width: 990px){
-    #gmap_canvas{
-        width: 300px;
-        height: 150px;
-        transform: translate(-50%, -50%);
+    #cover{
+        padding: 50px  0 0 0;
+    }
+    #map{
         .small-map{
-            margin-right: 50%;
+            .gmap_canvas{
+                box-shadow: $box-shadow;
+                width: 250px;
+                height: 400px;
+                 transform: translate(10%, 0%);
+             }
+        }
+        .map-content{
+            box-shadow: $box-shadow;
+            text-align: center;
+            color: $light-color;
+            width: 60%;
+            background-color: $main-color;
+            transform: translate(35%, -10%);
+        }
+        .social-icon{
+            ul{
+                display: flex;
+               justify-content: center;
+                li{
+                    padding: 5px;
+                    a{
+                        i{
+                            color: $light-color;
+                        }
+                    }
+                }
+                
+            }
         }
     }
+
 }

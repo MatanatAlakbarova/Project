@@ -15,6 +15,12 @@
 </head>
 
 <body>
+    <div id="preloader">
+        <div id="loader" class="spinner">
+          <div id="shadow"></div>
+          <div id="box"></div>
+        </div>
+      </div>
     <!-- Header start -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
@@ -83,14 +89,14 @@
         <section id="intro">
             <div class="container ">
                 <div class="row top ">
-                    <div class="col-lg-6 col-md-12 left"data-aos="fade-right"data-aos-duration="2000">
+                    <div class="col-lg-6 col-md-12 left"data-aos="fade-up"data-aos-duration="2000">
                         <h2>Industry Leading Managed <br> Services and Staffing <span>Solutions</span></h2>
                         <p>Proven methods to capture business priorities and <br>
                             goals as well as current pain points that
                             enables <br> measurable business outcomes.</p>
                         <button type="button" class="btn btn-primary btn-md text-uppercase ">Learn more</button>
                     </div>
-                    <div class="col-lg-6 col-md-12 images-item" data-aos="fade-left"data-aos-duration="2000">
+                    <div class="col-lg-6 col-md-12 images-item" data-aos="fade-up"data-aos-duration="2000">
                         <div class="image images-1"><img src="./assets/images/home/1.jpg" alt="intro-images"></div>
                         <div class="image images-2"><img src="./assets/images/home/2.jpg" alt="intro-images"></div>
                         <div class="image images-3 ">
@@ -162,7 +168,7 @@
         <section id="cloud-services">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6 left"data-aos="zoom-in-right"data-aos-duration="3000">
+                    <div class="col-lg-6 left"data-aos="fade-up"data-aos-duration="2000">
                         <div class="text">
                             <h3>Cloud Services</h3>
                             <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu
@@ -219,7 +225,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-6 right" data-aos="zoom-in-left"data-aos-duration="3000">
+                    <div class="col-lg-6 right"data-aos="fade-down"data-aos-duration="2000">
                         <div class="box-img">
                             <img src="./assets/images/blue-1.png" alt="">
                         </div>
@@ -233,12 +239,12 @@
         <section id="desing">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6 right"  data-aos="zoom-in-right"data-aos-duration="3000">
+                    <div class="col-lg-6 right"data-aos="fade-up"data-aos-duration="2000">
                         <div class="box-img">
-                            <img src="./assets/images/blue-2.png" alt="">
+                            <img src="./assets/images/blue-2.png" alt="blue-image">
                         </div>
                     </div>
-                    <div class="col-lg-6 left"data-aos="zoom-in-left"data-aos-duration="3000">
+                    <div class="col-lg-6 left"data-aos="fade-down"data-aos-duration="2000">
                         <div class="text">
                             <h3>Desing & Development</h3>
                             <p>Phasellus vitae velit sit amet diam semper commodo quis quis libero. Morbi consequat arcu
@@ -346,7 +352,7 @@
                                 magna quis arcu elementum, quis congue risus volutpat.</p>
                         </div>
                     </div>
-                    <div class="col-lg-3 cards text-center">
+                    <div class="col-lg-3 cards text-center"data-aos="fade-up"data-aos-duration="1500">
                         <div class="content ">
                             <h4>Fletch Skinner</h4>
                             <span>Product Strategist</span>
@@ -368,7 +374,7 @@
                             <img src="./assets/images/home/small-man1.jpg" alt="our-team">
                         </div>
                     </div>
-                    <div class="col-lg-3 cards text-center">
+                    <div class="col-lg-3 cards text-center"data-aos="fade-up"data-aos-duration="2000">
                         <div class="content ">
                             <h4>Fletch Skinner</h4>
                             <span>Product Strategist</span>
@@ -390,7 +396,7 @@
                             <img src="./assets/images/home/team2.jpg" alt="our-team">
                         </div>
                     </div>
-                    <div class="col-lg-3 cards text-center">
+                    <div class="col-lg-3 cards text-center"data-aos="fade-up"data-aos-duration="2500">
                         <div class="content ">
                             <h4>Fletch Skinner</h4>
                             <span>Product Strategist</span>
@@ -412,7 +418,7 @@
                             <img src="./assets/images/home/team3.jpg" alt="our-team">
                         </div>
                     </div>
-                    <div class="col-lg-3 cards text-center">
+                    <div class="col-lg-3 cards text-center"data-aos="fade-up"data-aos-duration="3000">
                         <div class="content ">
                             <h4>Fletch Skinner</h4>
                             <span>Product Strategist</span>
@@ -600,7 +606,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="logo"><img src="./assets/images/logo-white.png" alt=""></div>
+                        <div class="logo"><img src="./assets/images/logo-white.png" alt="logo"></div>
                         <p>Morbi convallis bibendum urna ut viverra. Maecenas quis
                             <br> consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi <br>
                             ultricies laoreet ullamcorper phasellus semper.
@@ -666,7 +672,8 @@
         <script>
             AOS.init();
           </script>
-        <script src="./js/index.js"></script>
+        <script src="./js/preloading.js"></script>
+       <script src="./js/index.js"></script>
     <!-- JavaScript -->
 
 </body>

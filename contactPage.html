@@ -9,18 +9,25 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
         integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous" />
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Contact</title>
 </head>
 
 <body>
-     <!-- Header start -->
-     <header>
+    <div id="preloader">
+        <div id="loader" class="spinner">
+          <div id="shadow"></div>
+          <div id="box"></div>
+        </div>
+      </div>
+    <!-- Header start -->
+    <header>
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container">
                 <div class="nav-logo">
-                    <a class="navbar-brand" href="#"><img src="./assets/images/logo-blue (1).png" alt="logo" /></a>
+                    <a class="navbar-brand" href="./homePage.html"><img src="./assets/images/logo-blue (1).png"
+                            alt="logo" /></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -43,7 +50,8 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                     <li><a class="dropdown-item" href="./homePage.html#cloud-services">Features</a></li>
                                     <li><a class="dropdown-item" href="./homePage.html#team">Our Team</a></li>
-                                    <li><a class="dropdown-item" href="./homePage.html#pricing-plans">Pricing Plans</a></li>
+                                    <li><a class="dropdown-item" href="./homePage.html#pricing-plans">Pricing Plans</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="./homePage.html#blog-post">Latests Blogs</a></li>
                                 </ul>
                             </li>
@@ -66,15 +74,17 @@
                     </div>
                     <div class="buttons ml-auto">
                         <button type="button" class="sign-in btn-sm btn btn-outline-primary">SIGN IN</button>
-                        <button type="button" class="sign-up btn btn-primary btn-sm btn-outline-light btn-register">SING UP</button>
+                        <button type="button" class="sign-up btn btn-primary btn-sm btn-outline-light btn-register">SING
+                            UP</button>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <!-- Header end -->
+    
     <main>
-        <!-- contact-cover section start -->
+        <!-- Contact-cover section start -->
         <section id="cover">
             <div class="container-fluid">
                 <div class="row">
@@ -91,45 +101,71 @@
                 </div>
             </div>
         </section>
-        <!-- contact-cover section end -->
+        <!-- Contact-cover section end -->
+
+        <!-- Map section star -->
         <section id="map">
             <div class="container mt-5">
                 <div class="row ">
-                    <div class="col-lg-12 col-md-12 d-flex justify-content-center small-map">
-                        <div class="mapouter"><div class="gmap_canvas"><iframe width="876" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=azerbaijan&t=&z=7&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://putlocker-is.org"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:876px;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:876px;}</style></div></div>
+                    <div class="col-lg-12 col-md-12 col-sm-12 d-flex justify-content-center small-map">
+                        <div class="mapouter " data-aos="fade-up" data-aos-duration="3000">
+                            <div class="gmap_canvas "><iframe width="876" height="500" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=azerbaijan&t=&z=7&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                                    href="https://putlocker-is.org"></a><br>
+                                <style>
+                                    .mapouter {
+                                        position: relative;
+                                        text-align: center;
+                                        height: 500px;
+                                        width: 876px;
+                                    }
+                                </style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a>
+                                <style>
+                                    .gmap_canvas {
+                                        overflow: hidden;
+                                        background: none !important;
+                                        height: 500px;
+                                        width: 876px;
+                                        text-align: center;
+                                    }
+                                </style>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="row map-content ">
-                       <div class="col-md-4 list">
-                                <i class="fas fa-location-arrow"></i>
-                                <h6>Azerbaijan</h6>
-                        </div>
-                         <div class="col-md-4 list">
-                                <i class="fa fa-phone"></i>
-                                <h6>(524) 386-5730</h6>
-                        </div>
-                         <div class="col-md-4 list">
-                                <i class="fa fa-envelope"></i>
-                                <h6>support @yourbrand. com</h6>
-                        </div>
-                        <div class="social-icon">
-                            <ul>
-                                <li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a></li>
-                                <li><a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li><a href="https://linkedin.com/" target="blank"><i class="fab fa-linkedin"></i></a>
-                                </li>
-                                <li><a href="https://google.com/" target="blank"><i class="fab fa-google"></i></a></li>
-                                <li><a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a></li>
-                            </ul>
-                        </div>
+                    <div class="col-md-4 list">
+                        <i class="fas fa-location-arrow"></i>
+                        <h6>Azerbaijan</h6>
+                    </div>
+                    <div class="col-md-4 list">
+                        <i class="fa fa-phone"></i>
+                        <h6>(524) 386-5730</h6>
+                    </div>
+                    <div class="col-md-4 list">
+                        <i class="fa fa-envelope"></i>
+                        <h6>support @yourbrand. com</h6>
+                    </div>
+                    <div class="social-icon">
+                        <ul>
+                            <li><a href="https://www.facebook.com/" target="blank"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/" target="blank"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://linkedin.com/" target="blank"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://google.com/" target="blank"><i class="fab fa-google"></i></a></li>
+                            <li><a href="https://github.com/" target="blank"><i class="fab fa-github"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
         </section>
+        <!-- Map section end -->
 
-
-        <!-- contact section start -->
+        <!-- Contact section start -->
         <section id="contact-message">
             <div class="container">
                 <div class="row ">
@@ -164,15 +200,16 @@
                 </div>
             </div>
         </section>
-
-        <!-- contact section end -->
+        <!-- Contact section end -->
     </main>
+
     <footer>
+        <!-- footer star -->
         <section id="footer">
             <div class="container">
                 <div class="row ">
                     <div class="col-lg-5 col-md-12 col-sm-12">
-                        <div class="logo"><img src="./assets/images/logo-white.png" alt=""></div>
+                        <div class="logo"><img src="./assets/images/logo-white.png" alt="logo-white"></div>
                         <p>Morbi convallis bibendum urna ut viverra. Maecenas quis
                             <br> consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi <br>
                             ultricies laoreet ullamcorper phasellus semper.
@@ -224,15 +261,22 @@
                 </div>
             </div>
         </section>
+        <!-- footer-end -->
     </footer>
- <!-- JavaScript -->
- <script src="https://code.jquery.com/jquery-3.6.0.min.js"
- integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
- integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
- </script>
-<script src="./js/index.js"></script>
-<!-- JavaScript -->
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+        </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="./js/preloading.js"></script>
+   <script src="./js/index.js"></script>
+    <!-- JavaScript -->
 </body>
 
 </html>
