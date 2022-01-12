@@ -78,6 +78,10 @@
   margin-left: auto;
 }
 
+.navbar .collapse .nav-items ul.navbar-nav .nav-item:hover .dropdown-menu {
+  display: block;
+}
+
 .navbar .collapse .nav-items ul.navbar-nav li.nav-item a.nav-link {
   padding: 10px 20px;
   font-weight: 600;
@@ -203,7 +207,7 @@
 }
 
 #intro {
-  padding: 100px;
+  padding-top: 100px;
 }
 
 #intro a {
@@ -221,10 +225,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-#intro .container .top .left {
-  font-family: inherit;
 }
 
 #intro .container .top .left h2 {
@@ -245,8 +245,7 @@
 }
 
 #intro .container .top .left .btn {
-  background-color: #585ce9;
-  border: none;
+  font-size: 14px;
 }
 
 #intro .container .top .images-1 {
@@ -334,18 +333,15 @@
   position: absolute;
   top: 0%;
   left: 0%;
+  color: #fff;
 }
 
 #intro .container .top .images-item .images-4 .content h4 {
-  color: #fff;
-  font-family: "Nunito", sans-serif;
-  font-size: 18px;
   margin-top: 30%;
-  margin-left: 20px;
-  letter-spacing: 1px;
 }
 
 #intro .container .bottom {
+  margin: 100px 0;
   text-align: center;
 }
 
@@ -359,13 +355,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 100px;
 }
 
 #intro .container .bottom .box-card .box {
   width: 90%;
-  height: 100%;
-  padding: 20px 45px 0px 45px;
+  padding: 45px;
   -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
           box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -386,15 +380,25 @@
 #intro .container .bottom .box-card .box .icon i {
   border: 1px solid #f7fafd;
   border-radius: 100%;
-  padding: 20px;
+  padding: 10px;
   color: #585ce9;
   background-color: #f7fafd;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #intro .container .bottom .box-card .box h5 {
-  font-size: 16px;
   margin: 25px 0px;
+}
+
+@media only screen and (max-width: 990px) {
+  #intro .top .btn {
+    -webkit-transform: translateX(70%);
+            transform: translateX(70%);
+    margin-bottom: 25px;
+  }
+  #intro .bottom .box {
+    margin-top: 25px;
+  }
 }
 
 #cloud-services {
@@ -665,42 +669,43 @@
 }
 
 #background {
-  background-image: url(http://demo.tempload.com/jirono/assets/images/photos/parallax.jpg);
+  background-image: url(/assets/images/parallax.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   position: relative;
   z-index: 2;
+  padding: 85px 0px;
 }
 
 #background .item {
-  position: relative;
-  margin-top: 10%;
+  overflow: hidden;
+  width: 100%;
+  -webkit-transition: .5s;
+  transition: .5s;
   z-index: 5;
-  -webkit-transition: .4s;
-  transition: .4s;
-  padding: 50px 0;
 }
 
 #background .item:hover {
-  -webkit-transform: translateY(-15px);
-          transform: translateY(-15px);
-}
-
-#background .item ::before {
-  content: "";
-  position: absolute;
-  border-bottom: 2px dashed #fff;
-  width: 100px;
-  height: 2px;
-  top: 40%;
-  left: 35%;
-  opacity: 1;
-  z-index: 2;
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
 }
 
 #background .item h3 {
+  position: relative;
   color: #fff;
+}
+
+#background .item h3::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50px;
+  margin: auto;
+  width: 115px;
+  height: 1px;
+  border-top: 1px dashed #fff;
 }
 
 #background .item h4 {
@@ -718,7 +723,13 @@
   height: 100%;
   background-color: #585ce9;
   z-index: -2;
-  opacity: 0.5;
+  opacity: 0.8;
+}
+
+@media only screen and (max-width: 990px) {
+  #background .item {
+    margin-top: 30px;
+  }
 }
 
 #pricing-plans {
@@ -785,7 +796,7 @@
 }
 
 #pricing-plans .container .row .content .header .price {
-  font-size: 50px;
+  font-size: 30px;
   color: #585ce9;
 }
 
@@ -796,7 +807,7 @@
 #pricing-plans .container .row .content .body ul li {
   list-style: none;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 14px;
   color: #1e3056;
 }
 
@@ -808,7 +819,7 @@
 #pricing-plans .container .row .content .body .btn {
   background-color: #585ce9;
   border: none;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 #devider {
@@ -1324,7 +1335,7 @@
 
 #mission {
   background-color: #f7fafd;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 #mission .image {
@@ -1357,9 +1368,40 @@
   background-color: #fff;
 }
 
+@media only screen and (max-width: 990px) {
+  #mission {
+    background-color: #f7fafd;
+  }
+  #mission .image {
+    overflow: hidden;
+  }
+  #mission .image img {
+    width: 100%;
+    z-index: -3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #mission .image img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #mission .content {
+    z-index: -2;
+    margin-top: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    color: #6F8BA4;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+}
+
 #vision {
   background-color: #f7fafd;
-  padding: 100px;
+  padding: 100px 0;
 }
 
 #vision .content {
@@ -1387,9 +1429,35 @@
   transition: .4s;
 }
 
-#vision .image img:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+@media only screen and (max-width: 990px) {
+  #vision {
+    background-color: #f7fafd;
+  }
+  #vision .image {
+    overflow: hidden;
+  }
+  #vision .image img {
+    width: 100%;
+    z-index: -3;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  #vision .image img:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  #vision .content {
+    z-index: -2;
+    margin-top: 0px;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+    color: #6F8BA4;
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
 }
 
 #faqs-intro {

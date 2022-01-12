@@ -1,6 +1,6 @@
 #mission{
     background-color: $background-color;
-    padding: 100px;
+    padding: 100px 0;
     .image{
         overflow: hidden;
         img{
@@ -23,4 +23,31 @@
         box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
         background-color: $light-color;
     }
+}
+@media only screen and (max-width: 990px) {
+    #mission{
+        background-color: $background-color;
+        .image{
+            overflow: hidden;
+            img{
+                width: 100%;
+                z-index: -3;
+                transition: .4s;
+                &:hover{
+                    transform: scale(1.1);
+                }
+           }
+        }
+        .content{
+            z-index: -2;
+            margin-top: 0px;
+            transform:translateX(0px);
+            color: $text-color;
+            padding: 10px 20px;
+            border: 1px solid $light-color;
+            box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+            background-color: $light-color;
+        }
+    }
+
 }

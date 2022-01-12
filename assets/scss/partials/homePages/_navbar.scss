@@ -75,6 +75,13 @@
 
         .nav-items {
             ul.navbar-nav {
+                .nav-item{
+                    &:hover{
+                        .dropdown-menu{
+                            display: block;
+                        }
+                    }
+                }
                 li.nav-item {
                     a.nav-link {
                         padding: 10px 20px;
