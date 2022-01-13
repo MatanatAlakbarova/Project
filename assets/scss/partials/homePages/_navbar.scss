@@ -1,6 +1,6 @@
 .navbar {
     z-index: 6666666;
-    width: 100%;
+    width: $width-100;
     position: fixed;
     padding: 20px 0;
     background: $light-color;
@@ -58,7 +58,7 @@
                 &.active {
                     span {
                         background-color: transparent;
-                        width: 100%;
+                        width: $width-100;
                     }
                 }
             }
@@ -184,7 +184,7 @@
         box-shadow:$box-shadow;
 
         .nav-logo {
-            width: 100%;
+            width: $width-100;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -202,7 +202,7 @@
                             padding-left: 0;
                         }
                         ul.dropdown-menu {
-                            width: 100%;
+                            width: $width-100;
                         }
                     }
                 }

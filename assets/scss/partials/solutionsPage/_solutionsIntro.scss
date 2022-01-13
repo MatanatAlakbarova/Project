@@ -3,12 +3,11 @@
   background-color: $background-color;
   .left{
     color: $text-color;
-    font-size: $font-size-18;
+    font-size: $font-size-16;
     letter-spacing: $letter-spacing;
     .image{
       img{
-        width: 100%;
-        height: 100%;
+        @extend .width-height-100;
         border-radius: $border-radius-15;
       }
     }
@@ -33,6 +32,7 @@
           padding: 20px 0;
           list-style: none;
           border-bottom: 1px solid rgb(219, 219, 219);
+          background-color: $light-color;
           span{
             transition: $transition-4s;
           }
@@ -55,14 +55,12 @@
   .small-image{
     img{
       border-radius: $border-radius;
-      width: 100%;
-      height: 100%;
+      @extend .width-height-100;
     }
   }
   .popup {
     z-index: 888888888;
-    width: 100%;
-    height: 100%;
+    @extend .width-height-100;
     position: fixed;
     top: 0;
     left: 0;
@@ -93,7 +91,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         position: absolute;
-        width: 100%;
+        width: $width-100;
         top: 45%;
         i{
           cursor: pointer;

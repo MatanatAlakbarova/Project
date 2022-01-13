@@ -3,11 +3,9 @@
     background-color: $background-color;
     .text{
         width: 80%;
-        font-family: inherit;
         h3{
             font-size: $font-size-25;
             letter-spacing: $letter-spacing;
-            font-family: Nunito,sans-serif;
             color: $title-color;
         }
         p{
@@ -110,7 +108,7 @@
             width: 80%;
             img{
                 margin-left: auto;
-                width: 100%;
+                width: $width-100;
             }            
         }
     }

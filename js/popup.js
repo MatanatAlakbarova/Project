@@ -39,14 +39,12 @@ document.addEventListener("keydown", (e) => {
  switch (e.code) {
    case "Escape":
     doClose();
-     break;
-  //    case "ArrowRight":
-  //       let showSlide = document.querySelector(".showSlide");
-  // nextElemSib(showSlide);
-  //  default:
-  //    break;
+   break;
+     case "ArrowRight":
+      let showSlide = document.querySelector(".showSlide");
+      nextElemSib(showSlide);
+    break;
  }
- 
 });
 
 function doOpen() {

@@ -10,8 +10,7 @@
         top: 0;
         left: 0;
         background-color: #474bbb38;
-        width: 100%;
-        height: 100%;    
+        @extend .width-height-100;    
         z-index: -2;    
     }
     .row{
@@ -22,7 +21,7 @@
             h2{
                 margin-bottom: 50px;
                 color: $light-color;
-                font-size: $font-size-16;
+                font-size: $font-size-25;
                 span{
                     text-decoration: underline;
                 }
@@ -32,7 +31,6 @@
                 background-color: $light-color;
                 color: $main-color;
                 border: none;
-                font-family: sans-serif;
             }
         }
     }

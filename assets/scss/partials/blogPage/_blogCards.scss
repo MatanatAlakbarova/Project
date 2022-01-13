@@ -12,12 +12,11 @@
                 .image{
                     border: 1px solid $light-color;
                     border-radius:$border-radius;
-                    width: 100%;
+                    width: $width-100;
                     height: 40%;
                     overflow: hidden;
                     img{
-                        width: 100%;
-                        height: 100%;
+                        @extend .width-height-100;
                         transform: scale(1.2);
                     }
                 }
