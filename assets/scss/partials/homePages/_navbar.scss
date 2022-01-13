@@ -21,7 +21,7 @@
 
                 span {
                     transition: all 0.4s;
-                    background-color: #3b566e;
+                    background-color: $title-color;
                     display: block;
                     width: 30px;
                     height: 2px;
@@ -29,7 +29,7 @@
                     &::before {
                         content: "";
                         transition: all 0.4s;
-                        background-color: #3b566e;
+                        background-color: $title-color;
                         display: block;
                         position: absolute;
                         width: 30px;
@@ -43,7 +43,7 @@
                     &::after {
                         content: "";
                         transition: all 0.4s;
-                        background-color: #3b566e;
+                        background-color: $title-color;
                         display: block;
                         position: absolute;
                         width: 30px;
@@ -114,7 +114,7 @@
 
                     ul.dropdown-menu {
                         width: 200px;
-                        box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
+                        box-shadow: $box-shadow;
                         border: none;
                         padding: 0;
                         left: 20px;
@@ -123,8 +123,8 @@
                             position: relative;
 
                             a {
-                                background: #fff;
-                                color: #3b566e;
+                                background: $light-color;
+                                color: $title-color;
                                 padding: 10px 10px 10px 20px;
                                 transition: all 0.3s ease 0s;
                                 position: relative;
@@ -181,7 +181,7 @@
     .navbar {
         padding-top: 20px;
         padding-bottom: 20px;
-        background: #fff;
+        background: $light-color;
         box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.06);
 
         .nav-logo {

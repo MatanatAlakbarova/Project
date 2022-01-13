@@ -1,0 +1,50 @@
+#blogs-card{
+    .container{
+        .row{
+            .blog-box{
+                i{
+                    color: $main-color;
+                }
+                span{
+                    color: $main-color;
+                }
+                text-align: center;
+                .image{
+                    border: 1px solid $light-color;
+                    border-radius:10px;
+                    width: 100%;
+                    height: 40%;
+                    overflow: hidden;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        transform: scale(1.5);
+                    }
+                }
+                h3{
+                    font-size: 18px;
+                    letter-spacing: 1px;
+                    line-height: 30px;
+                    margin: 25px 0;
+                    a{
+                        text-decoration: none;
+                        color: $title-color;
+                        transition: .4s;
+                        &:hover{
+                            color: $main-color;
+                        }
+                    }
+                }
+                p{
+                    color: $text-color;
+                }
+                .btn{
+                    background-color: $main-color;
+                    border: none;
+                    width: 50%;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
