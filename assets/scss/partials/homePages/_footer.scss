@@ -11,16 +11,16 @@
     a{
         color: $light-color;
         text-decoration: none;
-        font-size: 16px;
+        font-size: $font-size-16;
     }
    .box{
         ul{
-            padding: 0;
+            padding: $padding-0;
             li{
                 list-style: none;
                 line-height: 40px;
                 span{
-                transition: .4s;
+                transition: $transition-4s;
                 }
                 &:hover{
                     span{
@@ -34,17 +34,17 @@
         }
    }
    h5{
-       font-size: 16px;
+       font-size: $font-size-16;
        margin-bottom: 20px;
-       letter-spacing: 1px;
+       letter-spacing: $letter-spacing;
     }
     span{
         line-height: 50px;
-        font-size: 14px;
+        font-size: $font-size-14;
     }
     .social-icon{
         ul{
-            padding: 0;
+            padding: $padding-0;
             display: flex;
             text-align: start;
             li{

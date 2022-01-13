@@ -7,7 +7,7 @@
         p{
             color: $text-color;
             margin: 25px 0;
-            letter-spacing: 1px;
+            letter-spacing: $letter-spacing;
         }
         .btn{
             background-color: $main-color;
@@ -15,12 +15,12 @@
         }
     }
    .items{
-        box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+        box-shadow: $box-shadow;
         .accordion-item{
             font-family:serif;
             border: 1px solid $light-color;
             h2{
-                transition: .4s;
+                transition: $transition-4s;
             }
             &:hover{
                 h2{

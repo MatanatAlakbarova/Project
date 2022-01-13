@@ -1,13 +1,13 @@
 #contact-message{
     background-color: $background-color;
-    padding: 100px 0;
+    padding: $section-padding;
     h5{
         color: $text-color;
         line-height: 60px;
     }
     p{
         color: $text-color;
-        font-size: 14px;
+        font-size: $font-size-14;
     }
     .btn{
         background-color: $main-color;

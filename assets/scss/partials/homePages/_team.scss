@@ -1,19 +1,19 @@
 #team{
-    padding: 100px 0;
+    padding: $section-padding;
     .container{
         .top{
             text-align: center;
             line-height: 30px;
-            letter-spacing: 2px;
+            letter-spacing: $letter-spacing-2;
             h1{
                 color: $title-color;
                 line-height: 80px;
                 font-weight: 400;
-                font-size: 25px;
+                font-size: $font-size-25;
             }
             p{
                 color: $text-color;
-                font-size: 16px;
+                font-size: $font-size-16;
             }
         }
        .cards{
@@ -23,7 +23,7 @@
             ::after{
                content:" ";
                position: absolute;
-               transition: .4s;
+               transition: $transition-4s;
                top: 0%;
                left: 0%;
                width: 100%;
@@ -46,13 +46,13 @@
             .content{
                 padding: 5px 0;
                 z-index: 9999999;
-                letter-spacing: 1px;
+                letter-spacing: $letter-spacing;
                 color: $light-color;
                 h4{
-                    font-size: 16px;
+                    font-size: $font-size-16;
                 }
                 span{
-                    font-size: 14px;
+                    font-size: $font-size-14;
                 }
             }
             ul{ 
@@ -64,7 +64,7 @@
                     a{
                         i{
                             margin: 20px 0;
-                            font-size: 16px;
+                            font-size: $font-size-16;
                             color: $main-color;
 
                         }
@@ -78,7 +78,7 @@
                 img{
                     transform: translateY(30px);
                     border-radius:100% ;
-                    transition: .4s;
+                    transition: $transition-4s;
                 }
             }
             &:hover img{

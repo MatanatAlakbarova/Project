@@ -1,6 +1,6 @@
 #features-intro{
     background-color: $background-color;
-    padding: 100px 0;
+    padding: $section-padding;
    .container{
        .row{
            display: flex;
@@ -12,13 +12,13 @@
                 display: flex;
                 border: 1px solid $light-color;
                 background-color: $light-color;
-                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+                box-shadow: $box-shadow;
                 height: 80%;
                 margin-left: 5px;
                 .image-icon{
                     align-items: center;
                     transform: rotate(0deg);
-                    border-radius: 15px;
+                    border-radius: $border-radius-15;
                     position: relative;
                     img{
                         z-index: 3;
@@ -31,11 +31,10 @@
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%,-50%);
-                        padding: 50px;
+                        width: 100px;
+                        height: 100px;
                     }
-                    // &:hover.image-icon::after{
-                    //     transform: rotate(45deg);
-                    // }
+                   
                 }
                 .text{
                     h5{
@@ -63,16 +62,13 @@
                     margin: 35px;
                 }
                 &::after{
-                    transition: 1s;
+                    transition: $transition-4s;
                     content: "";
                     position: absolute;
                     width: 100%;
                     background-color: $background-color;
                     z-index: -2;
                     padding: 50px;
-                }
-                &:hover.image-icon::after{
-                    transform: rotate(45deg);
                 }
             }
             .text{

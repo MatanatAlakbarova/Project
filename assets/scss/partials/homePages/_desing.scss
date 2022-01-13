@@ -1,10 +1,10 @@
 #desing{
-    padding: 100px 0px;
+    padding: $section-padding;
     .text{
         width: 80%;
         h3{
-            font-size: 26px;
-            letter-spacing: 1px;
+            font-size: $font-size-25;
+            letter-spacing: $letter-spacing;
             font-family: Nunito,sans-serif;
             color: $title-color;
         }
@@ -24,8 +24,8 @@
                 width: 250px;
                 height: 40px;
                 background-color: $light-color;
-                border-radius: 5px;
-                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+                border-radius: $border-radius-5;
+                box-shadow:$box-shadow;
                 z-index: 1;
                 span{
                     display: inline-block;
@@ -58,10 +58,10 @@
                 width: 250px;
                 height: 40px;
                 background-color: $light-color;
-                border-radius: 5px;
-                box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1%);
+                border-radius: $border-radius-5;
+                box-shadow: $box-shadow;
                 z-index: 1;
-                transition:all 0.4s ease-in-out;
+                transition:$transition;
                 span{
                     transition:all 0.5s ease-in-out;
                     display: inline-block;
@@ -70,7 +70,7 @@
                 }
                 i{
                     margin: 10px 15px;
-                    color: black ;
+                    color: $title-color ;
                     z-index: 1;
                 }
                 ::after{
@@ -83,19 +83,19 @@
                     background-color:$background-color;
                     transform: rotate(60deg);
                     z-index: -1;
-                    transition:all 0.4s ease-in-out;
+                    transition:$transition;
                 }
                 &:hover ::after{
                     background-color: $main-color;
                     width: 110px;
-                    transition:all 0.4s ease-in-out;
+                    transition:$transition;
                 }
                 &:hover i{
                     color: $light-color;
                 }
                 &:hover span{
                     margin-left: 55px;
-                    transition:all 0.4s ease-in-out;
+                    transition:$transition;
                 }
             }
         }

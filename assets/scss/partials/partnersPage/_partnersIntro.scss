@@ -6,9 +6,9 @@
     .container {
       .row {
         .left {
-          padding: 0;
+          padding: $padding-0;
           background-color: $light-color;
-          border-radius: 10px;
+          border-radius: $border-radius;
           box-shadow: $box-shadow;
   
           .image {
@@ -30,13 +30,13 @@
             .cards {
               margin: 25px 0px;
               img {
-                border-radius: 10px;
+                border-radius: $border-radius;
                 width: 100%;
               }
             }
           }
           .text {
-            border-radius: 5px;
+            border-radius: $border-radius-5;
             width: 95%;
             background-color: $background-color;
             p {
@@ -59,7 +59,7 @@
             overflow: hidden;
             ul{
               margin: 0;
-              padding: 0;
+              padding: $padding-0;
               li{
                 cursor: pointer;
                 padding: 10px 0;
@@ -75,8 +75,8 @@
                 a{
                   text-decoration: none;
                   padding: 0 40px ;
-                  color: black;
-                  transition: .5s;
+                  color: $title-color;
+                  transition: $transition-4s;
                   font-weight: 300;
   
                   span{
@@ -103,7 +103,7 @@
                margin-left: 10px;
                margin-bottom: 20px;
                display: inline-block;
-               color: black;
+               color: $title-color;
                font-weight: 300;
                padding: 0 15px;
                border-radius: $border-radius;
@@ -188,9 +188,9 @@
       .container {
         .row {
           .left {
-            padding: 0;
+            padding: $padding-0;
             background-color: $light-color;
-            border-radius: 10px;
+            border-radius: $border-radius;
             box-shadow: $box-shadow;
     
             .image {
@@ -212,13 +212,13 @@
               .cards {
                 margin: 25px 0px;
                 img {
-                  border-radius: 10px;
+                  border-radius: $border-radius;
                   width: 100%;
                 }
               }
             }
             .text {
-              border-radius: 5px;
+              border-radius: $border-radius-5;
               width: 95%;
               background-color: $background-color;
               p {
@@ -242,7 +242,7 @@
               overflow: hidden;
               ul{
                 margin: 0;
-                padding: 0;
+                padding: $padding-0;
                 li{
                   cursor: pointer;
                   padding: 10px 0;
@@ -258,8 +258,8 @@
                   a{
                     text-decoration: none;
                     padding: 0 40px ;
-                    color: black;
-                    transition: .5s;
+                    color: $title-color;
+                    transition: $transition-4s;
                     font-weight: 300;
     
                     span{

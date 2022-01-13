@@ -5,11 +5,11 @@
   background-size: cover;
   position: relative;
   z-index: 2;
-  padding: 85px 0px;
+  padding: $section-padding;
   .item{
     overflow: hidden;
     width: 100%;
-    transition: .5s ;
+    transition: $transition-4s ;
     
       z-index: 5;
   
